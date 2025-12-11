@@ -1,0 +1,443 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[brazil]{babel}
+\usepackage{mdframed}
+
+
+
+\title{\huge Plano de Teste Mínimo - Spotify 9.1.2}
+\author{Aline Daffiny Ferreira Gomes}
+\date{10 de Dezembro de 2025}
+
+\begin{document}
+
+\maketitle
+
+\vspace{3cm}
+\begin{center}
+    Nota: Os casos desse Plano de Teste estão levando em consideração a versão do sistema para celular.
+\end{center}
+
+
+\newpage
+
+\begin{center}
+    \huge CT-01
+\end{center}
+
+\textbf{Nome}: Playlist sem nome
+
+\textbf{Objetivo}: Criar uma playlist, pelo botão "criar" da página inicial, e deixar o campo de nome vazio.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Estar logado no aplicativo;
+    \item Estar na página principal.
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item Clique no botão "Criar", localizado no no canto inferior direito, com um ícone com o símbolo de soma;
+    \item Clique na opção "Playlist";
+    \item Apague a sugestão de nome do Spotify (Minha playlist \#XX) e clique em "Criar".
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Página da playlist criada;
+    \item O nome da playlist se mantém no padrão "Minha playlist \#XX";
+    \item A playlist pode ser utilizada normalmente.
+    \end{itemize}  
+\end{mdframed}
+
+
+\newpage
+
+
+\begin{center}
+    \huge CT-02
+\end{center}
+
+\textbf{Nome}: Busca por código
+
+\textbf{Objetivo}: Buscar uma música usando umm código Spotify.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Possuir um aparelho com câmera funcionando;
+    \item Conceder ao Spotify acesso à câmera;
+    \item Estar logado;
+    \item Possuir um código Spotify;
+    \item Estar na página principal.
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item Clique no botão "Buscar", com o ícone de lupa, no menu inferior;
+    \item Clique no ícone de câmera no canto superior direito;
+    \item Selecione "Escanear";
+    \item Aponte para o código Spotify.
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item O conteúdo do código Spotify é aberto automaticamente.
+    \end{itemize}  
+\end{mdframed}
+
+\newpage
+
+
+\begin{center}
+    \huge CT-03
+\end{center}
+
+\textbf{Nome}: Música em loop
+
+\textbf{Objetivo}: Dentro de uma playlist, ouvir uma mesma música em loop, sem precisar reiniciá-la ou passar para a próxima.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Estar logado;
+    \item Estar ouvindo uma música dentro de um álbum ou playlist.
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item Clicar sobre a música, na parte inferior da tela, para abrir o player;
+    \item Clicar duas vezes sobre o ícone de seta em círculo, à direita do botão para avançar música.
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item O ícone de seta deve ficar verde com um número "1" no meio;
+    \item Ao final da música, ela será reiniciada automaticamente até que o ícone de seta volte a ficar branco.
+    \end{itemize}  
+\end{mdframed}
+
+\newpage
+
+
+\begin{center}
+    \huge CT-04
+\end{center}
+
+\textbf{Nome}: Tradução de letra
+
+\textbf{Objetivo}: Acompanhar a tradução da letra de uma música enquanto a música toca.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Estar logado;
+    \item Estar ouvindo uma música;
+    \item Estar no player;
+    \item A música deve ter a letra disponível;
+    \item A música deve ter a tradução disponível;
+    \item A música precisa ter sincronização com a letra.
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item No player, deslize a tela suavemente de baixo para cima;
+    \item Clique no ícone com um caractere chinês e uma letra "A", dentro da janela de letra, ao lado do botão de compartilhamento;
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item A janela de letra é expandida;
+    \item Aparece a letra original e o trecho traduzido abaixo;
+    \item O trecho cantado no momento é destacado em branco conforme a música avança.
+    \end{itemize}  
+\end{mdframed}
+
+\newpage
+
+\begin{center}
+    \huge CT-05
+\end{center}
+
+\textbf{Nome}: Remover música salva
+
+\textbf{Objetivo}: Remover uma música salva por engano sem acessar a playlist em que a mesma foi salva.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Estar logado;
+    \item Estar com o player aberto em uma música;
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item Clicar no botão de salvar música, à direita do nome da música, simulando salvamento por engano;
+    \item Clicar novamente no ícone;
+    \item Desselecionar a playlist "Músicas Curtidas";
+    \item Deslizar a tela do topo para baixo, até a janela de playlists sumir.
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item O botão de salvar música está branco e com o ícone de símbolo de soma, indicando que a música ainda não foi salva;
+    \item A música não aparece na playlist "Músicas Curtidas".
+    \end{itemize}  
+\end{mdframed}
+
+\newpage
+
+\begin{center}
+    \huge CT-06
+\end{center}
+
+\textbf{Nome}: Artistas seguidos
+
+\textbf{Objetivo}: Checar artistas seguidos na biblioteca.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Estar logado;
+    \item Ter seguido no mínimo 1 artista.
+    \item Estar na página principal
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item Clique no botão "Sua biblioteca" no menu inferior.
+    \item Clique no filtro "Artistas" no topo da tela, abaixo do título "Sua Biblioteca".
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Somente artistas devem aparecer;
+    \item Todos os artistas seguidos devem aparecer.
+    \end{itemize}  
+\end{mdframed}
+
+\newpage
+
+\begin{center}
+    \huge CT-07
+\end{center}
+
+\textbf{Nome}: Renovação do plano
+
+\textbf{Objetivo}: Checar data de renovação automática da assinatura sem sair do apicativo.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Estar logado;
+    \item Ter assinado o Premium na opção de pagamento recorrente.
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item Clicar na foto de perfil, no canto superior esquerdo;
+    \item Selecionar "Seu Premium";
+    \item Na seção "Assinatura", clicar em "Gerenciar".
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Informação sobre o plano assinado, valor e data de renovação automática.
+    \end{itemize}  
+\end{mdframed}
+
+\newpage
+
+\begin{center}
+    \huge CT-08
+\end{center}
+
+\textbf{Nome}: Modo offline
+
+\textbf{Objetivo}: Baixar playlist e ouvir as músicas sem acesso à internet.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Estar logado;
+    \item Ter assinado o Premium;
+    \item Ter acesso a uma playlist;
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item Dentro de uma playlist, clique no ícone de seta para baixo, embaixo do título, para fazer download das músicas;
+    \item Aguarde o fim do download;
+    \item Encerre o aplicativo e desligue suas fontes de Internet.
+    \item Entre novamente no aplicativo, você estará no "Modo Offline";
+    \item Vá para Sua Biblioteca.
+    \item Selecione a playlist baixada;
+    \item Clique no botão verde com um triângulo preto para iniciar a tocar.
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item A playlist deve tocar sem travamento;
+    \item Todos as playlists baixadas devem aparecer na biblioteca.
+    \end{itemize}  
+\end{mdframed}
+
+\newpage
+
+\begin{center}
+    \huge CT-09
+\end{center}
+
+\textbf{Nome}: Encerrar uma Jam
+
+\textbf{Objetivo}: Encerrar uma Jam.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Estar logado;
+    \item Ter assinado o Premium;
+    \item Ter iniciado uma Jam.
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item Deslize a janela com dados de compartilhamento da Jam para baixo;
+    \item Clique no botão "Encerrar", ao lado da foto de perfil dos participantes.
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item A Jam é encerrada para todos os participantes.
+    \end{itemize}  
+\end{mdframed}
+
+\newpage
+
+\begin{center}
+    \huge CT-10
+\end{center}
+
+\textbf{Nome}: Quantas músicas no mês
+
+\textbf{Objetivo}: Checar quantas músicas você ouviu no mês anterior.
+
+\vspace{1.5cm}
+\textbf{Pré-requisitos}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Estar logado;
+    \item Ter assinado o Premium;
+    \item Ter mais de um mês de uso do aplicativo.
+    \end{itemize}
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Passos para execução}:
+\begin{mdframed}
+    \begin{enumerate}
+    \item Clique na sua foto de perfil, no canto superior esquerdo, abrindo o menu lateral;
+    \item Selecione "Sua cápsula sonora";
+    \item Desça o feed até encontrar os dados do mês anterior;
+    \item Clique no quadrado com título "Música mais ouvida".
+    \end{enumerate}    
+\end{mdframed}
+
+
+\vspace{1.5cm}
+\textbf{Resultado esperado}:
+\begin{mdframed}
+    \begin{itemize}
+    \item Informações com ranking de músicas mais ouvidas do mês;
+    \item Informações de quantidade de músicas ouvidas e comparação com o mês anterior.
+    \end{itemize}  
+\end{mdframed}
+
+\newpage
+
+
+\end{document}
